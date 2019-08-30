@@ -1,4 +1,12 @@
-### 要使用PIE來強化影像，需要在C#中載入PIE_CLR.dll並呼叫下列函數即可
+## PIE包含下列檔案
+```
+PIE_CLR.dll
+PIE_DLL.dll
+opencv_world400.dll
+PIE.m
+```
+
+## 要使用PIE來強化影像，需要在C#中載入PIE_CLR.dll並呼叫下列函數即可
 
 ```C#
 byte* PIEclr.PIEclr_enhance_image(byte* gray_image, int width, int height)
